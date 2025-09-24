@@ -17,26 +17,26 @@
                 <div class="hidden lg:flex items-center justify-between">
                     <div class="ml-10 flex items-baseline">
                         <a href="#home"
-                            class="nav-link text-white hover:text-[#125b93] px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50">
+                            class="nav-link mx-3 text-white hover:border-2 hover:border-white rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ">
                             Home
                         </a>
 
                         <a href="#about-us"
-                            class="nav-link text-white hover:text-[#125b93] px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50">
+                            class="nav-link mx-3 text-white hover:border-2 hover:border-white rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ">
                             About us
                         </a>
 
                         <a href="#soluation"
-                            class="nav-link text-white hover:text-[#125b93] px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50">
+                            class="nav-link mx-3 text-white hover:border-2 hover:border-white rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ">
                             Soluations
                         </a>
 
-                        <a href="#why-us"
-                            class="nav-link text-white hover:text-[#125b93] px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50">
-                            Appliction
+                        <a href="#gallery"
+                            class="nav-link mx-3 text-white hover:border-2 hover:border-white rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ">
+                            Gallery
                         </a>
                         <a href="#contact"
-                            class="nav-link text-white hover:text-[#125b93] px-3 py-2 text-sm font-medium transition-all duration-200 hover:bg-blue-50">
+                            class="nav-link mx-3 text-white hover:border-2 hover:border-white rounded-md px-3 py-2 text-sm font-medium transition-all duration-200 ">
                             Contact us
                         </a>
                     </div>
@@ -62,27 +62,27 @@
         <!-- Mobile menu -->
         <div class="mobile-menu lg:hidden bg-[#125b93] border-t border-gray-200" id="mobile-menu">
             <div class="px-4 pt-2 pb-3 space-y-1">
-                <a href="index.php"
+                <a href="#home"
                     class="text-white hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
                     Home
                 </a>
 
-                <a href="about_us.php"
+                <a href="#about-us"
                     class="text-white hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
                     About Us
                 </a>
 
-                <a href="introduction.php"
+                <a href="#soluation"
                     class="text-white hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
                     Soluations
                 </a>
 
 
-                <a href="testimonials.php"
+                <a href="#gallery"
                     class="text-white hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
-                    Application
+                    Gallery
                 </a>
-                <a href="contact_us.php"
+                <a href="#contact"
                     class="text-white hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
                     Contact us
                 </a>

@@ -208,7 +208,7 @@ const sections = document.querySelectorAll("section");
 
     // remove all active classes first
     navLinks.forEach((link) => {
-      link.classList.remove("bg-white", "text-blue-500", "font-bold");
+      link.classList.remove("bg-white", "text-blue-500", "font-bold", "rounded-sm");
       link.classList.add("text-white");
     });
 
@@ -217,7 +217,7 @@ const sections = document.querySelectorAll("section");
       const activeLink = document.querySelector(`.nav-link[href="#${current}"]`);
       if (activeLink) {
         activeLink.classList.remove("text-white");
-        activeLink.classList.add("bg-white", "text-blue-500", "font-bold");
+        activeLink.classList.add("bg-white", "text-blue-500", "font-bold", "rounded-sm");
       }
     }
   }
