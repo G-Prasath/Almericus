@@ -12,15 +12,16 @@
 <body class="bg-gray-50">
     <?php
     $images = [
-        "https://pagedone.io/asset/uploads/1688025668.png",
-        "https://pagedone.io/asset/uploads/1688029344.png",
-        "https://pagedone.io/asset/uploads/1688029370.png",
-        "https://pagedone.io/asset/uploads/1688029384.png",
-        "https://pagedone.io/asset/uploads/1688029394.png",
-        "https://pagedone.io/asset/uploads/1688029408.png",
-        "https://pagedone.io/asset/uploads/1688029424.jpg",
-        "https://pagedone.io/asset/uploads/1688029434.png",
-        "https://pagedone.io/asset/uploads/1688029447.jpg"
+        "./imgs/gallery-1.jpg",
+        "./imgs/gallery-2.jpg",
+        "./imgs/gallery-3.jpg",
+        "./imgs/gallery-4.jpg",
+        "./imgs/gallery-5.jpg",
+        "./imgs/gallery-6.jpg",
+        "./imgs/gallery-7.jpg",
+        "./imgs/gallery-8.jpg",
+        "./imgs/gallery-9.jpg",
+
     ];
     ?>
 
@@ -30,13 +31,14 @@
     <!-- ======================== Banner Start ========================= -->
     <section class="relative h-screen flex flex-col items-center justify-center text-center text-white" id="home">
         <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-            <video class="min-w-full min-h-full absolute object-cover"
-                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4" autoplay muted loop></video>
+            <video class="min-w-full min-h-full absolute object-cover" src="./imgs/banner.mp4" type="video/mp4" autoplay
+                muted loop></video>
         </div>
         <div class="video-content space-y-2 z-10 flex flex-col justify-center items-center max-w-6xl">
-            <h1 class="font-bold text-3xl">Pioneering Brood to Bowl Traceability in Aquaculture</h1>
-            <h3 class="font-light text-md max-w-xl text-center">Track every shrimp from brood-stock, hatchery, and farm
+            <h1 class="font-bold text-3xl" data-aos="fade-up" data-aos-duration="1500">Pioneering Brood to Bowl
+                Traceability in Aquaculture</h1>
+            <h3 class="font-light text-md max-w-xl text-center" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="500">Track every shrimp from brood-stock, hatchery, and farm
                 to plate with QR-verified, antibiotic-free assurance.</h3>
         </div>
     </section>
@@ -87,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="w-full sm:w-1/2 mb-4 px-2 ">
+                <div class="w-full w-full mb-4 px-2 ">
                     <div class="h-full  px-6 border border-[#2db1fd] border-t-0 border-l-0 rounded-br-xl">
                         <p class="text-md leading-[25px] text-justify text-gray-600" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-delay="800">Through our integrated traceability ecosystem
@@ -107,208 +109,219 @@
 
     <!-- ====================== Soluations =============================    -->
     <section id="soluation">
-        <div class="bg-white pb-6">
-            <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-                <div class="container mx-auto px-6 p-6 bg-white">
+        <div class="bg-[url('./imgs/b1.jpg')] bg-cover bg-center bg-fixed bg-no-repeat">
+            <div class="bg-black/60 w-full h-full">
+                <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+                    <div class="container mx-auto px-6 p-6 bg-transparent">
 
 
-                    <!-- Section Header -->
-                    <div class="text-center max-w-3xl mx-auto md:mb-16">
-                        <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
-                            data-aos="fade-up" data-aos-duration="1500">
-                            Comprehensive Aquaculture Solutions</h2>
-                        <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
-                            data-aos="fade-up" data-aos-duration="1800"></div>
-                        <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-delay="500">
-                            Complete Solutions for a Resilient Aquaculture Ecosystem</p>
+                        <!-- Section Header -->
+                        <div class="text-center max-w-3xl mx-auto md:mb-16">
+                            <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
+                                data-aos="fade-up" data-aos-duration="1500">
+                                Comprehensive Aquaculture Solutions</h2>
+                            <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
+                                data-aos="fade-up" data-aos-duration="1800"></div>
+                            <p class="text-white md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-delay="500">
+                                Complete Solutions for a Resilient Aquaculture Ecosystem</p>
+                        </div>
+
+                        <div class="flex flex-wrap my-12 text-white">
+
+                            <!-- Almericus -->
+                            <div class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Almericus</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        The backbone of end-to-end shrimp traceability, empowering farmers, assuring
+                                        global
+                                        buyers, and connecting all ecosystem partners in one seamless platform. Our
+                                        Brood to
+                                        Bowl Traceability ecosystem ensures every step — from high-quality broodstock,
+                                        certified
+                                        hatchery seeds, climate-smart farms, and farm inputs to certified processing,
+                                        cold
+                                        chain
+                                        logistics, and global market access — is fully verified, transparent, and
+                                        antibiotic-free.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Climate-Resilient Ponds -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Climate-Resilient Ponds</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        We identify eco-friendly, productive aquaculture sites using satellite and
+                                        geospatial
+                                        tools,
+                                        ensuring sustainable and profitable farm operations.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Seed Solutions -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Seed Solutions for Quality & Biosecurity</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        Access high-quality, disease-free post-larvae from trusted genetic companies and
+                                        certified
+                                        hatcheries. BlueChain guarantees broodstock health, pathogen screening, and
+                                        complete
+                                        seed
+                                        traceability, giving farmers confidence and buyers verified assurance.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Farm Inputs Marketplace -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Farm Inputs Marketplace</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        Direct access to certified feeds, probiotics, and farm essentials, with expert
+                                        guidance
+                                        to
+                                        maximize productivity, efficiency, and biosecurity across farms.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Farm-to-Buyer Traceability -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Farm-to-Buyer Traceability</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        QR-enabled Brood to Bowl traceability ensures full visibility from hatchery to
+                                        plate.
+                                        BAP,
+                                        ASC, SAPHARI certifications, and verified antibiotic-free testing provide global
+                                        buyers
+                                        with
+                                        trust, compliance, and transparency.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Certified Processing & Cold Chain -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Certified Processing & Cold Chain Logistics</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        End-to-end temperature-controlled logistics ensure product freshness and quality
+                                        from
+                                        farm
+                                        to certified processing and onward to international markets.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Financial & Risk Solutions -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Financial & Risk Solutions</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        Loans and insurance provide farmers, FPOs, and exporters with working capital
+                                        and
+                                        protection
+                                        against disease, climate, and export risks — building confidence throughout the
+                                        value
+                                        chain.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Blue Carbon Solutions -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Blue Carbon Solutions</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        Climate-smart shrimp farming practices unlock verifiable blue carbon credits,
+                                        creating
+                                        additional income streams for farmers and exporters while supporting
+                                        biodiversity,
+                                        sustainable production, and global climate action.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
-
-                    <div class="flex flex-wrap my-12">
-
-                        <!-- Almericus -->
-                        <div class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Almericus</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    The backbone of end-to-end shrimp traceability, empowering farmers, assuring global
-                                    buyers, and connecting all ecosystem partners in one seamless platform. Our Brood to
-                                    Bowl Traceability ecosystem ensures every step — from high-quality broodstock,
-                                    certified
-                                    hatchery seeds, climate-smart farms, and farm inputs to certified processing, cold
-                                    chain
-                                    logistics, and global market access — is fully verified, transparent, and
-                                    antibiotic-free.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Climate-Resilient Ponds -->
-                        <div class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Climate-Resilient Ponds</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    We identify eco-friendly, productive aquaculture sites using satellite and
-                                    geospatial
-                                    tools,
-                                    ensuring sustainable and profitable farm operations.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Seed Solutions -->
-                        <div
-                            class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Seed Solutions for Quality & Biosecurity</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    Access high-quality, disease-free post-larvae from trusted genetic companies and
-                                    certified
-                                    hatcheries. BlueChain guarantees broodstock health, pathogen screening, and complete
-                                    seed
-                                    traceability, giving farmers confidence and buyers verified assurance.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Farm Inputs Marketplace -->
-                        <div class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Farm Inputs Marketplace</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    Direct access to certified feeds, probiotics, and farm essentials, with expert
-                                    guidance
-                                    to
-                                    maximize productivity, efficiency, and biosecurity across farms.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Farm-to-Buyer Traceability -->
-                        <div class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Farm-to-Buyer Traceability</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    QR-enabled Brood to Bowl traceability ensures full visibility from hatchery to
-                                    plate.
-                                    BAP,
-                                    ASC, SAPHARI certifications, and verified antibiotic-free testing provide global
-                                    buyers
-                                    with
-                                    trust, compliance, and transparency.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Certified Processing & Cold Chain -->
-                        <div
-                            class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Certified Processing & Cold Chain Logistics</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    End-to-end temperature-controlled logistics ensure product freshness and quality
-                                    from
-                                    farm
-                                    to certified processing and onward to international markets.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Financial & Risk Solutions -->
-                        <div
-                            class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Financial & Risk Solutions</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    Loans and insurance provide farmers, FPOs, and exporters with working capital and
-                                    protection
-                                    against disease, climate, and export risks — building confidence throughout the
-                                    value
-                                    chain.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Blue Carbon Solutions -->
-                        <div
-                            class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
-                            <div data-aos="fade-up" data-aos-duration="1500">
-                                <div class="flex items-center mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
-                                        fill="currentColor" class="h-6 w-6 text-indigo-500">
-                                        <path
-                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                        </path>
-                                    </svg>
-                                    <div class="ml-4 text-xl">Blue Carbon Solutions</div>
-                                </div>
-                                <p class="leading-loose text-gray-500 text-justify">
-                                    Climate-smart shrimp farming practices unlock verifiable blue carbon credits,
-                                    creating
-                                    additional income streams for farmers and exporters while supporting biodiversity,
-                                    sustainable production, and global climate action.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -405,6 +418,16 @@
     <!-- ====================== Gallery Section ====================   -->
     <section id="gallery">
         <div class="w-full md:w-[90%] mx-auto py-8 px-4 lg:py-16 lg:px-6">
+            <div class="text-center max-w-3xl mx-auto md:mb-16 mb-4">
+                <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
+                    data-aos="fade-up" data-aos-duration="1500">
+                    Gallery </h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
+                    data-aos="fade-up" data-aos-duration="1800"></div>
+                <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-delay="500">
+                     Transforming Shrimp Farming with Innovation</p>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
                 <?php foreach ($images as $src): ?>
                     <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-duration="1500">
