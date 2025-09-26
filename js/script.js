@@ -138,23 +138,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // ======================== Navbar End ===========================
 
   // ======================= Banner Start ===========================
-   const carousel = document.getElementById("carousel");
-    const slides = carousel.children;
-    const totalSlides = slides.length;
-    let index = 0;
+  const carousel = document.getElementById("carousel");
+  const slides = carousel.children;
+  const totalSlides = slides.length;
+  let index = 0;
 
-    function showSlide(i) {
-      index = (i + totalSlides) % totalSlides; // loop
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    }
+  function showSlide(i) {
+    index = (i + totalSlides) % totalSlides; // loop
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-    document.getElementById("prevBtn").addEventListener("click", () => showSlide(index - 1));
-    document.getElementById("nextBtn").addEventListener("click", () => showSlide(index + 1));
+  document
+    .getElementById("prevBtn")
+    .addEventListener("click", () => showSlide(index - 1));
+  document
+    .getElementById("nextBtn")
+    .addEventListener("click", () => showSlide(index + 1));
 
-    // Auto-slide
-    setInterval(() => {
-      showSlide(index + 1);
-    }, 9000);
+  // Auto-slide
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 9000);
 
   // ======================== Banner End ============================
 
@@ -191,35 +195,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // =======================  Navbar ative link highlight ==========================
 const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-link");
-  const navbarHeight = document.querySelector("nav").offsetHeight;
+const navLinks = document.querySelectorAll(".nav-link");
+const navbarHeight = document.querySelector("nav").offsetHeight;
 
-  function onScroll() {
-    let current = "";
+function onScroll() {
+  let current = "";
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - navbarHeight - 1;
-      const sectionHeight = section.offsetHeight;
+  // find the section currently in view
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - navbarHeight - 1;
+    const sectionHeight = section.offsetHeight;
 
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      current = section.getAttribute("id");
+    }
+  });
 
-    // remove all active classes first
-    navLinks.forEach((link) => {
-      link.classList.remove("bg-white", "text-blue-500", "font-bold", "rounded-sm");
-      link.classList.add("text-white");
-    });
+  // reset all nav links
+  navLinks.forEach((link) => {
+    link.classList.remove("active-link");
+  });
 
-    // add active only to the current one
-    if (current) {
-      const activeLink = document.querySelector(`.nav-link[href="#${current}"]`);
-      if (activeLink) {
-        activeLink.classList.remove("text-white");
-        activeLink.classList.add("bg-white", "text-blue-500", "font-bold", "rounded-sm");
-      }
+  // add active style to the current one
+  if (current) {
+    const activeLink = document.querySelector(`.nav-link[href="#${current}"]`);
+    if (activeLink) {
+      activeLink.classList.add("active-link");
     }
   }
+}
 
-  window.addEventListener("scroll", onScroll);
+window.addEventListener("scroll", onScroll);
+
+// =================== Video ===================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const playButton = document.getElementById("play-button");
+  const thumbnail = document.getElementById("thumbnail");
+  const videoContainer = document.getElementById("video");
+
+  playButton.addEventListener("click", () => {
+    thumbnail.classList.add("hidden");
+    videoContainer.classList.remove("hidden");
+  });
+});

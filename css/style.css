@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .dropdown-menu {
@@ -61,178 +62,30 @@ body {
   background: rgba(255, 255, 255, 0.95);
 }
 
-/* ================== Hero Banner ==================  */
-.banner-slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: 0px auto;
+/* ============================= Active Class ==================  */
+
+/* Base nav link style */
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;  
+  clip-path: polygon(8% 0, 100% 0%, 93% 100%, 0% 100%); /* keeps shape consistent */
+  transition: all 0.3s ease-in-out;
+  color: #2563eb; /* Tailwind blue-500 */
+  font-weight: 500; /* default medium weight */
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1270px;
-  height: 100%;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Active nav link */
+.nav-link.active-link {
+  background-color: #22a6e5;
+  color: #fff;
+  font-weight: 700;
 }
 
-.slide.active {
-  opacity: 1;
-}
 
-/* Slide Transition Effects */
-.slide.fade-effect {
-  transition: opacity 1.5s ease-in-out;
-}
 
-.slide.slide-effect {
-  transform: translateX(100%);
-  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
-}
 
-.slide.slide-effect.active {
-  transform: translateX(0);
-}
 
-.slide.zoom-effect {
-  transform: scale(1.1);
-  transition: transform 1.2s ease-in-out, opacity 1s ease-in-out;
-}
 
-.slide.zoom-effect.active {
-  transform: scale(1);
-}
-
-.slide.rotate-effect {
-  transform: rotate(2deg) scale(1.05);
-  transition: transform 1.3s ease-in-out, opacity 1s ease-in-out;
-}
-
-.slide.rotate-effect.active {
-  transform: rotate(0deg) scale(1);
-}
-
-.slider-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 20;
-}
-
-.slider-nav:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.slider-nav.prev {
-  left: 30px;
-}
-
-.slider-nav.next {
-  right: 30px;
-}
-
-/* Progress Bar */
-.progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 20;
-  width: 100%;
-}
-
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #9b9b9b, #9b9b9b);
-  width: 0%;
-  transition: width linear;
-}
-
-@media (max-width: 768px) {
-  .slider-nav {
-    width: 40px;
-    height: 40px;
-  }
-
-  .slider-nav.prev {
-    left: 15px;
-  }
-
-  .slider-nav.next {
-    right: 15px;
-  }
-
-  .slider-dots {
-    bottom: 20px;
-  }
-}
-/* ================== Hero Banner End ==================  */
-
-/* ==================== Language Switcher ==================   */
-body > .skiptranslate {
-  display: none !important;
-}
-
-body {
-  top: 0 !important;
-}
-
-/* Thin Scrollbar */
-#customLangSelect::-webkit-scrollbar {
-  width: 4px;
-}
-
-/* ============================ Photo Gallery ==================== */
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
-
-.running_slider {
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-}
-
-.running_slider .running_slide-track {
-  display: flex;
-  animation: scroll 40s linear infinite;
-  width: fit-content;
-  gap: 20px;
-}
-
-.running_slider .running_slide {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* ===================== Video ==========================  */
 .video-docker video {

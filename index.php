@@ -23,6 +23,17 @@
         "./imgs/gallery-9.jpg",
 
     ];
+
+    $sdg_goals = [
+        "No Poverty",
+        "Zero Hunger",
+        "Good Health & Well Being",
+        "Sustainable cities & communities",
+        "Responsible consumption and production",
+        "Climate Action",
+        "Life below Water",
+        "Life on Land"
+    ];
     ?>
 
     <?php include_once './_templates/navbar.php'; ?>
@@ -35,11 +46,11 @@
                 muted loop></video>
         </div>
         <div class="video-content space-y-2 z-10 flex flex-col justify-center items-center max-w-6xl">
-            <h1 class="font-bold text-3xl" data-aos="fade-up" data-aos-duration="1500">Pioneering Brood to Bowl
+            <h1 class="font-bold text-3xl" data-aos="fade-up" data-aos-duration="1500">Pioneering Brood-to-Bowl
                 Traceability in Aquaculture</h1>
-            <h3 class="font-light text-md max-w-xl text-center" data-aos="fade-up" data-aos-duration="1500"
-                data-aos-delay="500">Track every shrimp from brood-stock, hatchery, and farm
-                to plate with QR-verified, antibiotic-free assurance.</h3>
+            <h3 class="font-medium text-md max-w-xl text-center" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="500">Certified, antibiotic-free, and fully traceable — delivering trust from farms to
+                global markets.</h3>
         </div>
     </section>
     <!-- ========================== Banner End ======================== -->
@@ -49,61 +60,46 @@
     <section class="w-full md:w-[90%] bg-gray-100 mx-auto py-8 px-4 lg:py-16 lg:px-6" id="about-us">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto md:mb-16 mb-4">
-            <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
-                data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up" data-aos-duration="1500">
                 About Us </h2>
-            <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
-                data-aos="fade-up" data-aos-duration="1800"></div>
+            <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up" data-aos-duration="1800">
+            </div>
             <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                 data-aos-delay="500">
                 Transforming Aquaculture Through Traceability and Innovation</p>
         </div>
 
 
-        <div class="flex flex-col md:flex-row">
-            <!-- can help image -->
-            <div class="mr-0 md:mr-8 mb-6 md:mb-0">
-                <img class="w-full max-md:aspect-square md:w-[550px] mx-auto rounded-md" src="./imgs/about.jpeg"
-                    alt="can_help_banner" data-aos="zoom-in" data-aos-duration="2000">
+        <!-- Hero Section -->
+        <section class="bg-gary-100 px-4">
+            <div class="container mx-auto flex flex-col md:space-x-10 md:flex-row justify-between items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+
+                    <p class="text-md text-gray-600 mb-4 text-justify leading-[28px]" data-aos="fade-up"
+                        data-aos-duration="1500" data-aos-delay="500">Founded to revolutionize aquaculture in India,
+                        Almericus is ICAR-CIBA
+                        incubated and guided by leading
+                        scientists. Our platform connects every partner — genetic companies, hatcheries, farmers, input
+                        suppliers, processors, exporters, and global buyers — into a fully traceable, transparent, and
+                        sustainable ecosystem. </p>
+
+                    <p class="text-md text-gray-600 mb-4 text-justify leading-[28px]" data-aos="fade-up"
+                        data-aos-duration="1500" data-aos-delay="500">Through our Brood to Bowl Traceability system, we
+                        provide end-to-end,
+                        research-backed solutions
+                        that ensure high-quality, disease-free shrimp, climate-smart farming practices, and globally
+                        compliant
+                        supply chains. Almericus builds trust, sustainability, and resilience across the entire
+                        aquaculture value
+                        chain. </p>
+
+                </div>
+                <div class="md:w-1/2 w-full aspect-video">
+                    <img src="./imgs/about.jpeg" alt="Hero Image" class="w-full" data-aos="zoom-in"
+                        data-aos-duration="1500" data-aos-delay="500">
+                </div>
             </div>
-            <!-- end can help image -->
-
-            <div class="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
-                <div class="w-full sm:w-1/2 mb-4 px-2 ">
-                    <div class="h-full  px-6 border border-[#2db1fd] border-t-0 border-l-0 rounded-br-xl">
-                        <p class="text-md leading-[25px] text-justify text-gray-600" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-delay="500">Trusted by farmers, hatcheries, genetic
-                            companies, farm input suppliers, and domestic and global
-                            buyers, Almericus ensures transparent, traceable, sustainable, and resilient aquaculture
-                            across the
-                            entire value chain. </p>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 mb-4 px-2 ">
-                    <div class="h-full  px-6 border border-[#2db1fd] border-t-0 border-l-0 rounded-br-xl">
-                        <p class="text-md leading-[25px] text-justify text-gray-600" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-delay="800">Founded with a vision to revolutionize
-                            aquaculture in India, Almericus is the country’s most trusted
-                            traceability ecosystem platform, incubated at ICAR-CIBA, Chennai, and guided by CIBA
-                            scientists. </p>
-                    </div>
-                </div>
-
-                <div class="w-full w-full mb-4 px-2 ">
-                    <div class="h-full  px-6 border border-[#2db1fd] border-t-0 border-l-0 rounded-br-xl">
-                        <p class="text-md leading-[25px] text-justify text-gray-600" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-delay="800">Through our integrated traceability ecosystem
-                            platform, we provide end-to-end, research-backed
-                            solutions — from climate-resilient ponds, high-quality genetic seeds, and farm inputs to
-                            sourcing,
-                            processing, cold chain logistics, and international market access with traceability. </p>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
+        </section>
     </section>
     <!-- ============================ About Section End ======================= -->
 
@@ -112,16 +108,16 @@
         <div class="bg-[url('./imgs/b1.jpg')] bg-cover bg-center bg-fixed bg-no-repeat">
             <div class="bg-black/60 w-full h-full">
                 <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-                    <div class="container mx-auto px-6 p-6 bg-transparent">
+                    <div class="container mx-auto md:px-6 md:p-6 bg-transparent">
 
 
                         <!-- Section Header -->
                         <div class="text-center max-w-3xl mx-auto md:mb-16">
-                            <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
-                                data-aos="fade-up" data-aos-duration="1500">
+                            <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 Comprehensive Aquaculture Solutions</h2>
-                            <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
-                                data-aos="fade-up" data-aos-duration="1800"></div>
+                            <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up"
+                                data-aos-duration="1800"></div>
                             <p class="text-white md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                                 data-aos-delay="500">
                                 Complete Solutions for a Resilient Aquaculture Ecosystem</p>
@@ -129,37 +125,8 @@
 
                         <div class="flex flex-wrap my-12 text-white">
 
-                            <!-- Almericus -->
-                            <div class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8">
-                                <div data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="flex items-center mb-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
-                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
-                                            <path
-                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
-                                            </path>
-                                        </svg>
-                                        <div class="ml-4 text-xl">Almericus</div>
-                                    </div>
-                                    <p class="leading-loose text-white text-justify">
-                                        The backbone of end-to-end shrimp traceability, empowering farmers, assuring
-                                        global
-                                        buyers, and connecting all ecosystem partners in one seamless platform. Our
-                                        Brood to
-                                        Bowl Traceability ecosystem ensures every step — from high-quality broodstock,
-                                        certified
-                                        hatchery seeds, climate-smart farms, and farm inputs to certified processing,
-                                        cold
-                                        chain
-                                        logistics, and global market access — is fully verified, transparent, and
-                                        antibiotic-free.
-                                    </p>
-                                </div>
-                            </div>
-
                             <!-- Climate-Resilient Ponds -->
-                            <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
+                            <div class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -181,7 +148,7 @@
 
                             <!-- Seed Solutions -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -190,7 +157,7 @@
                                                 d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
                                             </path>
                                         </svg>
-                                        <div class="ml-4 text-xl">Seed Solutions for Quality & Biosecurity</div>
+                                        <div class="ml-4 text-xl">Seed Solutions</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
                                         Access high-quality, disease-free post-larvae from trusted genetic companies and
@@ -203,9 +170,9 @@
                                 </div>
                             </div>
 
-                            <!-- Farm Inputs Marketplace -->
+                            <!-- SFarm Inputs Marketplace -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -227,7 +194,7 @@
 
                             <!-- Farm-to-Buyer Traceability -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -250,9 +217,9 @@
                                 </div>
                             </div>
 
-                            <!-- Certified Processing & Cold Chain -->
+                            <!-- Certified Processing -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -261,7 +228,7 @@
                                                 d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
                                             </path>
                                         </svg>
-                                        <div class="ml-4 text-xl">Certified Processing & Cold Chain Logistics</div>
+                                        <div class="ml-4 text-xl">Certified Processing</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
                                         End-to-end temperature-controlled logistics ensure product freshness and quality
@@ -274,7 +241,7 @@
 
                             <!-- Financial & Risk Solutions -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -298,7 +265,7 @@
 
                             <!-- Blue Carbon Solutions -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -319,6 +286,20 @@
                                 </div>
                             </div>
 
+                            <!-- Blue Carbon Solutions -->
+                            <div
+                                class="w-full max-md:hidden border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+
+                                        <div class="ml-4 text-xl"></div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -328,87 +309,94 @@
 
 
         <!-- =================== Why Choose Us ====================    -->
-        <div class="bg-[#ecf8fa]">
+        <div class="bg-gray-100">
             <section class="py-16 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-7xl mx-auto">
                     <!-- Section Header -->
                     <div class="text-center max-w-3xl mx-auto md:mb-16">
-                        <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
-                            data-aos="fade-up" data-aos-duration="1500">
+                        <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up"
+                            data-aos-duration="1500">
                             Why Almericus?</h2>
-                        <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
-                            data-aos="fade-up" data-aos-duration="1800"></div>
+                        <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up"
+                            data-aos-duration="1800"></div>
                         <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                             data-aos-delay="500">
                             Almericus in building trusted, sustainable shrimp supply chains.</p>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-                        <!-- Feature 1 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="ICAR-CIBA">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">ICAR-CIBA Backed</h3>
-                            <p class="text-gray-600">
-                                Research-driven credibility backed by ICAR-CIBA’s expertise in sustainable aquaculture.
-                            </p>
+                    <section class="">
+                        <div class="container max-w-xl mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
+                            <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                                <div>
+                                    <div class="mt-4 space-y-8">
+                                        <div class="flex" data-aos="fade-up" data-aos-duration="1500"
+                                            data-aos-delay="600">
+                                            <div class="flex-shrink-0">
+                                                <div class="flex items-center justify-center w-10 h-10 rounded-md">
+                                                    <img src="./imgs/choose.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ml-4">
+                                                <h4 class="text-lg font-medium  ">ICAR-CIBA Backed</h4>
+                                                <p class="mt-2 text-gray-600 text-justify max-md:text-sm">
+                                                    Research-driven credibility.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" data-aos="fade-up" data-aos-duration="1500"
+                                            data-aos-delay="700">
+                                            <div class="flex-shrink-0">
+                                                <div class="flex items-center justify-center w-10 h-10 rounded-md">
+                                                    <img src="./imgs/choose.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ml-4">
+                                                <h4 class="text-lg font-medium  ">Pioneering Traceability
+                                                </h4>
+                                                <p class="mt-2 text-gray-600 text-justify max-md:text-sm">Brood to Bowl
+                                                    system connecting the entire
+                                                    aquaculture ecosystem. </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" data-aos="fade-up" data-aos-duration="1500"
+                                            data-aos-delay="800">
+                                            <div class="flex-shrink-0">
+                                                <div class="flex items-center justify-center w-10 h-10 rounded-md">
+                                                    <img src="./imgs/choose.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ml-4">
+                                                <h4 class="text-lg font-medium ">Integrated Ecosystem</h4>
+                                                <p class="mt-2 text-gray-600 text-justify max-md:text-sm">Genetic
+                                                    companies, hatcheries, farmers,
+                                                    input suppliers, processors, exporters, and buyers in one platform.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex" data-aos="fade-up" data-aos-duration="1500"
+                                            data-aos-delay="900">
+                                            <div class="flex-shrink-0">
+                                                <div class="flex items-center justify-center w-10 h-10 rounded-md">
+                                                    <img src="./imgs/choose.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ml-4">
+                                                <h4 class="text-lg font-medium ">Sustainability, Transparency & Trust
+                                                </h4>
+                                                <p class="mt-2 text-gray-600 text-justify max-md:text-sm">Every shrimp
+                                                    is fully verified,
+                                                    antibiotic-free, and globally compliant.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div aria-hidden="true" class="mt-10 lg:mt-0">
+                                    <img src="./imgs/why.png" class="mx-auto" data-aos="zoom-in"
+                                        data-aos-duration="1500" data-aos-delay="500">
+                                </div>
+                            </div>
                         </div>
+                    </section>
 
-                        <!-- Feature 2 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="Traceability">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Pioneering Traceability</h3>
-                            <p class="text-gray-600">
-                                Brood to Bowl system connecting the entire aquaculture ecosystem seamlessly.
-                            </p>
-                        </div>
-
-                        <!-- Feature 3 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="Ecosystem">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Integrated Ecosystem</h3>
-                            <p class="text-gray-600">
-                                Genetic companies, hatcheries, farmers, input suppliers, processors, exporters, and
-                                buyers
-                                in one platform.
-                            </p>
-                        </div>
-
-                        <!-- Feature 4 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="Cold Chain">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Specialized Cold Chain Logistics</h3>
-                            <p class="text-gray-600">
-                                Ensuring farm-to-global market compliance with reliable cold chain logistics.
-                            </p>
-                        </div>
-
-                        <!-- Feature 5 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="Blue Carbon">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Blue Carbon Innovation</h3>
-                            <p class="text-gray-600">
-                                Climate-smart practices generating new revenue streams through verified carbon credits.
-                            </p>
-                        </div>
-
-                        <!-- Feature 6 -->
-                        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-                            data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700">
-                            <img src="./imgs/shrimp.png" class="w-10 mb-3" alt="Trust">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Sustainability, Transparency & Trust
-                            </h3>
-                            <p class="text-gray-600">
-                                Every shrimp is fully verified, antibiotic-free, and globally compliant.
-                            </p>
-                        </div>
-
-                    </div>
 
                 </div>
             </section>
@@ -419,14 +407,14 @@
     <section id="gallery">
         <div class="w-full md:w-[90%] mx-auto py-8 px-4 lg:py-16 lg:px-6">
             <div class="text-center max-w-3xl mx-auto md:mb-16 mb-4">
-                <h2 class="text-xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-[#2db1fd] bg-clip-text text-transparent"
-                    data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up"
+                    data-aos-duration="1500">
                     Gallery </h2>
-                <div class="h-1 w-20 bg-gradient-to-r from-indigo-600 to-[#2db1fd] mx-auto mb-6 rounded-full"
-                    data-aos="fade-up" data-aos-duration="1800"></div>
+                <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up"
+                    data-aos-duration="1800"></div>
                 <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                     data-aos-delay="500">
-                     Transforming Shrimp Farming with Innovation</p>
+                    Transforming Shrimp Farming with Innovation</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
                 <?php foreach ($images as $src): ?>
@@ -445,12 +433,7 @@
                 <div class="rounded-xl bg-white p-6 text-center shadow-xl">
                     <div
                         class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
-                        <svg viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 text-white">
-                            <path
-                                d="M24.75 23H8.25V28.75H24.75V23ZM32.3984 9.43359L23.9852 0.628906C23.5984 0.224609 23.0742 0 22.5242 0H22V11.5H33V10.952C33 10.3859 32.7852 9.83789 32.3984 9.43359ZM19.25 12.2188V0H2.0625C0.919531 0 0 0.961328 0 2.15625V43.8438C0 45.0387 0.919531 46 2.0625 46H30.9375C32.0805 46 33 45.0387 33 43.8438V14.375H21.3125C20.1781 14.375 19.25 13.4047 19.25 12.2188ZM5.5 6.46875C5.5 6.07164 5.80766 5.75 6.1875 5.75H13.0625C13.4423 5.75 13.75 6.07164 13.75 6.46875V7.90625C13.75 8.30336 13.4423 8.625 13.0625 8.625H6.1875C5.80766 8.625 5.5 8.30336 5.5 7.90625V6.46875ZM5.5 12.2188C5.5 11.8216 5.80766 11.5 6.1875 11.5H13.0625C13.4423 11.5 13.75 11.8216 13.75 12.2188V13.6562C13.75 14.0534 13.4423 14.375 13.0625 14.375H6.1875C5.80766 14.375 5.5 14.0534 5.5 13.6562V12.2188ZM27.5 39.5312C27.5 39.9284 27.1923 40.25 26.8125 40.25H19.9375C19.5577 40.25 19.25 39.9284 19.25 39.5312V38.0938C19.25 37.6966 19.5577 37.375 19.9375 37.375H26.8125C27.1923 37.375 27.5 37.6966 27.5 38.0938V39.5312ZM27.5 21.5625V30.1875C27.5 30.9817 26.8847 31.625 26.125 31.625H6.875C6.11531 31.625 5.5 30.9817 5.5 30.1875V21.5625C5.5 20.7683 6.11531 20.125 6.875 20.125H26.125C26.8847 20.125 27.5 20.7683 27.5 21.5625Z"
-                                fill="white"></path>
-                        </svg>
+                        <img src="./imgs/Vision.png" class="w-10" alt="">
                     </div>
                     <h1 class="text-darken mb-3 text-xl font-medium lg:px-14" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="300">Vision</h1>
@@ -460,45 +443,7 @@
                 <div data-aos-delay="150" class="rounded-xl bg-white p-6 text-center shadow-xl">
                     <div
                         class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-rose-500 shadow-rose-500/40">
-                        <svg viewBox=" 0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 text-white">
-                            <path
-                                d="M12 0C11.0532 0 10.2857 0.767511 10.2857 1.71432V5.14285H13.7142V1.71432C13.7142 0.767511 12.9467 0 12 0Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M36 0C35.0532 0 34.2856 0.767511 34.2856 1.71432V5.14285H37.7142V1.71432C37.7143 0.767511 36.9468 0 36 0Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M42.8571 5.14282H37.7143V12C37.7143 12.9468 36.9468 13.7143 36 13.7143C35.0532 13.7143 34.2857 12.9468 34.2857 12V5.14282H13.7142V12C13.7142 12.9468 12.9467 13.7143 11.9999 13.7143C11.0531 13.7143 10.2856 12.9468 10.2856 12V5.14282H5.14285C2.30253 5.14282 0 7.44535 0 10.2857V42.8571C0 45.6974 2.30253 48 5.14285 48H42.8571C45.6975 48 48 45.6974 48 42.8571V10.2857C48 7.44535 45.6975 5.14282 42.8571 5.14282ZM44.5714 42.8571C44.5714 43.8039 43.8039 44.5714 42.857 44.5714H5.14285C4.19605 44.5714 3.42854 43.8039 3.42854 42.8571V20.5714H44.5714V42.8571Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M13.7142 23.9999H10.2857C9.33889 23.9999 8.57138 24.7674 8.57138 25.7142C8.57138 26.661 9.33889 27.4285 10.2857 27.4285H13.7142C14.661 27.4285 15.4285 26.661 15.4285 25.7142C15.4285 24.7674 14.661 23.9999 13.7142 23.9999Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M25.7143 23.9999H22.2857C21.3389 23.9999 20.5714 24.7674 20.5714 25.7142C20.5714 26.661 21.3389 27.4285 22.2857 27.4285H25.7143C26.6611 27.4285 27.4286 26.661 27.4286 25.7142C27.4286 24.7674 26.6611 23.9999 25.7143 23.9999Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M37.7143 23.9999H34.2857C33.3389 23.9999 32.5714 24.7674 32.5714 25.7142C32.5714 26.661 33.3389 27.4285 34.2857 27.4285H37.7143C38.6611 27.4285 39.4286 26.661 39.4286 25.7142C39.4286 24.7674 38.661 23.9999 37.7143 23.9999Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M13.7142 30.8571H10.2857C9.33889 30.8571 8.57138 31.6246 8.57138 32.5714C8.57138 33.5182 9.33889 34.2857 10.2857 34.2857H13.7142C14.661 34.2857 15.4285 33.5182 15.4285 32.5714C15.4285 31.6246 14.661 30.8571 13.7142 30.8571Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M25.7143 30.8571H22.2857C21.3389 30.8571 20.5714 31.6246 20.5714 32.5714C20.5714 33.5182 21.3389 34.2857 22.2857 34.2857H25.7143C26.6611 34.2857 27.4286 33.5182 27.4286 32.5714C27.4286 31.6246 26.6611 30.8571 25.7143 30.8571Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M37.7143 30.8571H34.2857C33.3389 30.8571 32.5714 31.6246 32.5714 32.5714C32.5714 33.5182 33.3389 34.2857 34.2857 34.2857H37.7143C38.6611 34.2857 39.4286 33.5182 39.4286 32.5714C39.4285 31.6246 38.661 30.8571 37.7143 30.8571Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M13.7142 37.7142H10.2857C9.33889 37.7142 8.57138 38.4817 8.57138 39.4286C8.57138 40.3754 9.33889 41.1428 10.2857 41.1428H13.7142C14.661 41.1428 15.4285 40.3753 15.4285 39.4284C15.4285 38.4816 14.661 37.7142 13.7142 37.7142Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M25.7143 37.7142H22.2857C21.3389 37.7142 20.5714 38.4817 20.5714 39.4285C20.5714 40.3754 21.3389 41.1429 22.2857 41.1429H25.7143C26.6611 41.1429 27.4286 40.3754 27.4286 39.4285C27.4286 38.4817 26.6611 37.7142 25.7143 37.7142Z"
-                                fill="#F5F5FC"></path>
-                            <path
-                                d="M37.7143 37.7142H34.2857C33.3389 37.7142 32.5714 38.4817 32.5714 39.4285C32.5714 40.3754 33.3389 41.1429 34.2857 41.1429H37.7143C38.6611 41.1429 39.4286 40.3754 39.4286 39.4285C39.4286 38.4817 38.661 37.7142 37.7143 37.7142Z"
-                                fill="#F5F5FC"></path>
-                        </svg>
+                        <img src="./imgs/mission.png" class="w-10" alt="">
                     </div>
                     <h1 class="text-darken mb-3 text-xl font-medium lg:px-14 " data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="300">Mission</h1>
@@ -507,6 +452,98 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- ============================ SDG Sections ========================= -->
+    <section class="relative bg-fixed bg-center bg-cover py-20 md:min-h-screen"
+        style="background-image: url('./imgs/sdg-bg.jpg');" id="sdg">
+
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black/40  bg-opacity-70"></div>
+
+        <div class="container relative z-10 md:max-w-[90%] mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+
+                <!-- Left Content -->
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="text-[#22a6e5] text-xl md:text-2xl mb-8 font-bold text-medium">
+                        UN SDG
+                    </p>
+
+                    <p class="text-white font-bold md:text-5xl text-2xl leading-tight mb-6">
+                        UN SDG’s We are aligned with UN SDG’s on below:
+                    </p>
+                    <ul class="text-sm md:text-md font-medium text-gray-700 dark:text-white sm:text-base md:mx-auto">
+                        <?php foreach ($sdg_goals as $goal): ?>
+                            <li class="my-4 flex items-center">
+                                <svg class="mr-2 flex-shrink-0 text-[#22a6e5] font-bold" width="24" height="24"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#22a6e5">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 
+                         01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 
+                         1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <?= htmlspecialchars($goal) ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./imgs/sdg.jpg" alt="Coffee beans" class="md:w-[50%] w-full rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========================= Videos ========================  -->
+    <section class="relative text-white overflow-hidden section-padding md:py-16 py-10" id="video">
+        <!-- Main Content Container -->
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Heading & Description -->
+            <div class="text-center max-w-3xl mx-auto md:mb-14 mb-4">
+                <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    Shrimp Pond Tour </h2>
+                <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up"
+                    data-aos-duration="1800"></div>
+                <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-delay="500">
+                    A closer look at sustainable farming practices and healthy growth.</p>
+            </div>
+            <!-- Video Section -->
+            <div class="max-w-4xl mx-auto">
+                <div class="relative overflow-hidden shadow-2xl" id="video-container">
+                    <!-- Thumbnail View -->
+                    <div id="thumbnail" class="relative">
+                        <img src="./imgs/video.jpg" alt="Video thumbnail" class="w-full aspect-video object-cover" />
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer"
+                            id="play-button">
+                            <!-- Play Button SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-18 w-18" viewBox="0 0 24 24">
+                                <!-- White Circle -->
+                                <circle cx="12" cy="12" r="10" fill="white" />
+                                <!-- Blue Play Triangle -->
+                                <polygon points="10,8 16,12 10,16" fill="#22a6e5" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                    <!-- Video Embed -->
+                    <div id="video" class="hidden aspect-video relative ">
+                        <iframe class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                            title="The Artist Barefoot Showcase" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

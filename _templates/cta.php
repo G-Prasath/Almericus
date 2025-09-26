@@ -1,4 +1,5 @@
-<div loading="lazy" data-aos="zoom-in" data-aos-duration="1000" class="bg-gray-800 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8 border-b-2 border-white">
+<div loading="lazy" data-aos="zoom-in" data-aos-duration="1000"
+    class="bg-gray-800 dark:bg-gray-800 py-8 px-4 sm:px-6 lg:px-8 border-b-2 border-white">
     <div class="max-w-7xl mx-auto">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-extrabold text-white dark:text-white sm:text-4xl" data-aos="fade-up"
@@ -11,17 +12,14 @@
             </p>
             <div class="mt-8 flex justify-center md:space-x-4 md:flex-row flex-col" data-aos="fade-up"
                 data-aos-delay="700" data-aos-duration="1300">
-                <a href="https://wa.me/"
-                    class="flex flex-row items-center justify-center w-full px-4 py-4 mb-4 text-sm text-gray-900 font-bold bg-[#25d366] leading-6 capitalize duration-100 transform rounded-sm shadow cursor-pointer focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10   hover:shadow-lg hover:bg-transparent hover:text-white hover:border-2 hover:border-[#25d366]">
-                    WhatsApp
-                </a>
-                <a href="tel:"
-                    class="flex items-center justify-center w-full px-4 py-4 text-sm text-white font-bold leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-[#1cb4f7] focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:bg-[#1cb4f7] hover:text-gray-900">
-                    Call
-                </a>
-                <a href="" target="_blank"
-                    class="flex items-center justify-center w-full px-4 py-4 text-sm text-white font-bold leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-[#ffffff] focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:bg-[#ffffff] hover:text-gray-900">
-                    Application
+
+                <a href="" target="_blank" class="flex justify-center items-center">
+                    <div class="flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                        <div class="flex items-center bg-gray-100 hover:bg-white rounded-lg shadow-md px-6 py-2 text-md ">
+                            <img src="./imgs/play.png" class="w-10 mr-2" alt="">
+                            <span class="font-bold text-gray-700">Google Play</span>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>

@@ -2,13 +2,13 @@
 
     <a href="https://wa.me/+91" target="_blank" rel="noopener noreferrer"
         class="flex items-center justify-center w-11 h-11 xs:w-10 xs:h-10 bg-green-500 text-white rounded-full shadow-lg transition-transform hover:scale-110">
-        <img src="./img/whatsapp.png" alt="whatsapp">
+        <img src="./imgs/whatsapp.png" alt="whatsapp">
     </a>
 
     <a href="tel:"
         target="_blank"
         class="flex items-center justify-center w-10 h-10 xs:w-10 xs:h-10 bg-blue-600 text-white rounded-full shadow-lg transition-transform hover:scale-110">
-        <img src="./img/call.png" alt="whatsapp">
+        <img src="./imgs/call.png" alt="whatsapp">
     </a>
 
     <a href="javascript:;" target="_blank"
