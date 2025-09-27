@@ -138,27 +138,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // ======================== Navbar End ===========================
 
   // ======================= Banner Start ===========================
-  const carousel = document.getElementById("carousel");
-  const slides = carousel.children;
-  const totalSlides = slides.length;
-  let index = 0;
+  // const carousel = document.getElementById("carousel");
+  // const slides = carousel.children;
+  // const totalSlides = slides.length;
+  // let index = 0;
 
-  function showSlide(i) {
-    index = (i + totalSlides) % totalSlides; // loop
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
+  // function showSlide(i) {
+  //   index = (i + totalSlides) % totalSlides; // loop
+  //   carousel.style.transform = `translateX(-${index * 100}%)`;
+  // }
 
-  document
-    .getElementById("prevBtn")
-    .addEventListener("click", () => showSlide(index - 1));
-  document
-    .getElementById("nextBtn")
-    .addEventListener("click", () => showSlide(index + 1));
+  // document
+  //   .getElementById("prevBtn")
+  //   .addEventListener("click", () => showSlide(index - 1));
+  // document
+  //   .getElementById("nextBtn")
+  //   .addEventListener("click", () => showSlide(index + 1));
 
-  // Auto-slide
-  setInterval(() => {
-    showSlide(index + 1);
-  }, 9000);
+  // // Auto-slide
+  // setInterval(() => {
+  //   showSlide(index + 1);
+  // }, 9000);
 
   // ======================== Banner End ============================
 

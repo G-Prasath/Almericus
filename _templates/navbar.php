@@ -64,7 +64,7 @@
         </div>
 
         <!-- Mobile menu -->
-        <div class="mobile-menu lg:hidden border-t border-gray-200" id="mobile-menu">
+        <div class="mobile-menu lg:hidden" id="mobile-menu">
             <div class="px-4 pt-2 pb-3 space-y-1">
                 <a href="#home"
                     class="text-blue-500 bg-gray-100 hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">

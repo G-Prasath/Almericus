@@ -12,15 +12,15 @@
 <body class="bg-gray-50">
     <?php
     $images = [
-        "./imgs/gallery-1.jpg",
-        "./imgs/gallery-2.jpg",
-        "./imgs/gallery-3.jpg",
-        "./imgs/gallery-4.jpg",
-        "./imgs/gallery-5.jpg",
-        "./imgs/gallery-6.jpg",
-        "./imgs/gallery-7.jpg",
-        "./imgs/gallery-8.jpg",
-        "./imgs/gallery-9.jpg",
+        "./imgs/gallery-1.avif",
+        "./imgs/gallery-2.avif",
+        "./imgs/gallery-3.avif",
+        "./imgs/gallery-4.avif",
+        "./imgs/gallery-5.avif",
+        "./imgs/gallery-6.avif",
+        "./imgs/gallery-7.avif",
+        "./imgs/gallery-8.avif",
+        "./imgs/gallery-9.avif",
 
     ];
 
@@ -41,18 +41,26 @@
 
     <!-- ======================== Banner Start ========================= -->
     <section class="relative h-screen flex flex-col items-center justify-center text-center text-white" id="home">
-        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-            <video class="min-w-full min-h-full absolute object-cover" src="./imgs/banner.mp4" type="video/mp4" autoplay
-                muted loop></video>
+        <!-- Video background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <video class="w-full h-full object-cover" src="./imgs/banner.mp4" type="video/mp4" autoplay muted
+                loop></video>
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 bg-black/70"></div>
         </div>
-        <div class="video-content space-y-2 z-10 flex flex-col justify-center items-center max-w-6xl">
-            <h1 class="font-bold text-3xl" data-aos="fade-up" data-aos-duration="1500">Pioneering Brood-to-Bowl
-                Traceability in Aquaculture</h1>
-            <h3 class="font-medium text-md max-w-xl text-center" data-aos="fade-up" data-aos-duration="1500"
-                data-aos-delay="500">Certified, antibiotic-free, and fully traceable — delivering trust from farms to
-                global markets.</h3>
+
+        <!-- Content -->
+        <div class="relative z-10 space-y-4 max-w-6xl px-4">
+            <h1 class="font-bold text-3xl" data-aos="fade-up" data-aos-duration="1500">
+                Pioneering Brood-to-Bowl Traceability in Aquaculture
+            </h1>
+            <h3 class="font-medium text-md max-w-xl mx-auto" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="500">
+                Certified, antibiotic-free, and fully traceable — delivering trust from farms to global markets.
+            </h3>
         </div>
     </section>
+
     <!-- ========================== Banner End ======================== -->
 
     <!-- ========================= About Section Start =========================  -->
@@ -105,7 +113,7 @@
 
     <!-- ====================== Soluations =============================    -->
     <section id="soluation">
-        <div class="bg-[url('./imgs/b1.jpg')] bg-cover bg-center bg-fixed bg-no-repeat">
+        <div class="bg-[url('./imgs/soluation.avif')] bg-cover bg-center bg-fixed bg-no-repeat">
             <div class="bg-black/60 w-full h-full">
                 <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
                     <div class="container mx-auto md:px-6 md:p-6 bg-transparent">
@@ -228,7 +236,7 @@
                                                 d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
                                             </path>
                                         </svg>
-                                        <div class="ml-4 text-xl">Certified Processing</div>
+                                        <div class="ml-4 text-xl">Cold chain Logistics</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
                                         End-to-end temperature-controlled logistics ensure product freshness and quality
@@ -390,7 +398,7 @@
                                     </div>
                                 </div>
                                 <div aria-hidden="true" class="mt-10 lg:mt-0">
-                                    <img src="./imgs/why.png" class="mx-auto" data-aos="zoom-in"
+                                    <img src="./imgs/why.jpg" class="mx-auto" data-aos="zoom-in"
                                         data-aos-duration="1500" data-aos-delay="500">
                                 </div>
                             </div>
@@ -433,7 +441,7 @@
                 <div class="rounded-xl bg-white p-6 text-center shadow-xl">
                     <div
                         class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
-                        <img src="./imgs/Vision.png" class="w-10" alt="">
+                        <img src="./imgs/vision.png" class="w-10" alt="">
                     </div>
                     <h1 class="text-darken mb-3 text-xl font-medium lg:px-14" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="300">Vision</h1>
@@ -474,7 +482,7 @@
                     <p class="text-white font-bold md:text-5xl text-2xl leading-tight mb-6">
                         UN SDG’s We are aligned with UN SDG’s on below:
                     </p>
-                    <ul class="text-sm md:text-md font-medium text-gray-700 dark:text-white sm:text-base md:mx-auto">
+                    <ul class="text-sm md:text-md font-medium text-gray-700 text-white sm:text-base md:mx-auto">
                         <?php foreach ($sdg_goals as $goal): ?>
                             <li class="my-4 flex items-center">
                                 <svg class="mr-2 flex-shrink-0 text-[#22a6e5] font-bold" width="24" height="24"
@@ -492,7 +500,8 @@
 
                 <!-- Right Image -->
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="./imgs/sdg.jpg" alt="Coffee beans" class="md:w-[50%] w-full rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-500">
+                    <img src="./imgs/sdg.jpg" alt="Coffee beans"
+                        class="md:w-[50%] w-full rounded-lg shadow-lg filter grayscale hover:grayscale-0 transition duration-500">
                 </div>
             </div>
         </div>
