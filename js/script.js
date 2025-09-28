@@ -134,64 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //     card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
   //     observer.observe(card);
   //   });
-
-  // ======================== Navbar End ===========================
-
-  // ======================= Banner Start ===========================
-  // const carousel = document.getElementById("carousel");
-  // const slides = carousel.children;
-  // const totalSlides = slides.length;
-  // let index = 0;
-
-  // function showSlide(i) {
-  //   index = (i + totalSlides) % totalSlides; // loop
-  //   carousel.style.transform = `translateX(-${index * 100}%)`;
-  // }
-
-  // document
-  //   .getElementById("prevBtn")
-  //   .addEventListener("click", () => showSlide(index - 1));
-  // document
-  //   .getElementById("nextBtn")
-  //   .addEventListener("click", () => showSlide(index + 1));
-
-  // // Auto-slide
-  // setInterval(() => {
-  //   showSlide(index + 1);
-  // }, 9000);
-
-  // ======================== Banner End ============================
-
-  // ========================= Language Switcher Start =========================
-
-  function hidePoweredByText() {
-    let parentElements = document.querySelectorAll(
-      "#google_translate_element .goog-te-gadget"
-    );
-
-    parentElements.forEach((parent) => {
-      parent.childNodes.forEach((node) => {
-        // Check if it's a plain text node and contains "Powered by"
-        if (
-          node.nodeType === 3 &&
-          node.nodeValue.trim().includes("Powered by")
-        ) {
-          node.nodeValue = ""; // Remove the text
-        }
-      });
-    });
-  }
-
-  // Run once at start
-  hidePoweredByText();
-
-  // Use MutationObserver to catch widget reloads and language changes
-  const observer = new MutationObserver(() => {
-    hidePoweredByText();
-  });
-
-  observer.observe(document.body, { childList: true, subtree: true });
 });
+// ======================== Navbar End ===========================
 
 // =======================  Navbar ative link highlight ==========================
 const sections = document.querySelectorAll("section");
@@ -232,13 +176,23 @@ window.addEventListener("scroll", onScroll);
 
 // =================== Video ===================
 
-document.addEventListener("DOMContentLoaded", () => {
-  const playButton = document.getElementById("play-button");
-  const thumbnail = document.getElementById("thumbnail");
-  const videoContainer = document.getElementById("video");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const playButton = document.getElementById("play-button");
+//   const thumbnail = document.getElementById("thumbnail");
+//   const videoContainer = document.getElementById("video-cnt");
+//   const iframe = videoContainer.querySelector("iframe");
 
-  playButton.addEventListener("click", () => {
-    thumbnail.classList.add("hidden");
-    videoContainer.classList.remove("hidden");
-  });
-});
+//   playButton.addEventListener("click", () => {
+//     thumbnail.classList.add("hidden");
+//     videoContainer.classList.remove("hidden");
+
+//     // Trigger autoplay when revealed
+//     const src = iframe.getAttribute("src");
+//     if (!src.includes("autoplay=1")) {
+//       iframe.setAttribute(
+//         "src",
+//         src + (src.includes("?") ? "&" : "?") + "autoplay=1"
+//       );
+//     }
+//   });
+// });

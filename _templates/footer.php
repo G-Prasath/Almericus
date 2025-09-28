@@ -10,10 +10,10 @@
         <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
             <div class="sm:col-span-2">
                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                    <img src="./imgs/logo.jpeg" style="width:240px" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                    <img src="./imgs/footer_logo.png" style="width:240px" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                 </a>
                 <div class="lg:max-w-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                    <p class="text-xl font-medium my-4">Trusted Shrimp, Delivered Globally</p>
+                    <p class="text-xl font-medium my-3">Trusted Shrimp, Delivered Globally</p>
                     <p class="text-sm text-gray-300 leading-relaxed">
                         Looking to source certified, antibiotic-free, and fully traceable shrimp? Let’s connect.
                     </p>
@@ -23,13 +23,13 @@
                 <p class="text-lg font-bold tracking-wide">Contacts</p>
                 <div class="flex">
                     <p class="text-sm font-bold text-white mr-1">Phone:</p>
-                    <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
-                        class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+                    <a href="tel:9962996110" aria-label="Our phone" title="Our phone"
+                        class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">996 299 6110</a>
                 </div>
                 <p class="text-lg font-bold tracking-wide mt-7">Social Media</p>
                 <div class="flex items-center space-x-4 mt-2">
                     <!-- YouTube -->
-                    <a href="/" class="text-gray-300 hover:text-red-600 transition-colors duration-300"
+                    <a href="https://youtu.be/vlCxhqDrkWM?si=Vj-9KmDMFDYN-ZHm" target="_blank" class="text-gray-300 hover:text-red-600 transition-colors duration-300"
                         aria-label="YouTube">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
@@ -90,7 +90,7 @@
                         </svg>
                         <!-- Address -->
                         <div>
-                            <p class="text-sm font-bold text-white">Administrative Office :</p>
+                            <p class="text-sm font-bold text-white">Incubation Office :</p>
                             <p class="text-sm text-gray-300 leading-relaxed">
                                  C/O. ITMU Division, ICAR-CIBA MRC Nagar, Raja Annamalai Puram Chennai, Tamil Nadu – 600028
                             </p>
@@ -111,12 +111,12 @@
                 </li>
                 <li>
                     <a href="#about-us"
-                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">About
+                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">About Us
                         Us</a>
                 </li>
                 <li>
                     <a href="#soluation"
-                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">Soluations</a>
+                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">Solutions</a>
                 </li>
                 <li>
                     <a href="#sgd"

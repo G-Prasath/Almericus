@@ -28,7 +28,7 @@
 
                         <a href="#soluation"
                             class="nav-link text-blue-500 border-2 border-transparent hover:border-[#22a6e5] px-3 py-2 text-sm font-medium transition-all duration-200 ">
-                            Soluations
+                            Solutions
                         </a>
 
                         <a href="#gallery"
@@ -78,7 +78,7 @@
 
                 <a href="#soluation"
                     class="text-blue-500 bg-gray-100 hover:text-[#125b93] hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-all duration-200">
-                    Soluations
+                    Solutions
                 </a>
 
 

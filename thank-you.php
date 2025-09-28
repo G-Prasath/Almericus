@@ -24,9 +24,9 @@
   </header>
 
   <div class="main-content">
-    <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+    <i class="fa fa-check main-content__checkmark" class="bg-red-900" id="checkmark"></i>
     <p class="main-content__body" data-lead-id="main-content-body">
-      Thanks a bunch for filling that out. We appreciate your time!
+      Thank you for your time and support, I truly appreciate it.
     </p>
     <p class="redirect-text">Redirecting to contact page in <span id="countdown">5</span> seconds...</p>
   </div>
@@ -40,7 +40,7 @@
       countdownEl.textContent = seconds;
       if (seconds <= 0) {
         clearInterval(timer);
-        window.location.href = "contact_us.php";
+        window.location.href = "index.php";
       }
     }, 1000);
   </script>

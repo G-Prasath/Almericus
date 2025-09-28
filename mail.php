@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = nl2br(htmlspecialchars(trim($_POST["message"]))); // keep line breaks
 
     // Your receiving email
-    $to = "mudrasmp@gmail.com"; 
+    $to = "guru.almericus@gmail.com"; 
 
     $subject = "Enquiry Mail";
 
@@ -55,13 +55,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ";
 
     // Headers
-    $headers  = "From: Website Enquiry <contact@selvalakshmifoundation.org>\r\n";
+    $headers  = "From: Website Enquiry <contact@https://www.almericus.in/>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n"; // HTML type
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "✅ Message sent successfully!";
+        header("Location: thank-you.php");
     } else {
         echo "❌ Failed to send message. Please try again later.";
     }

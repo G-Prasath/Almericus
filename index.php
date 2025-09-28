@@ -102,9 +102,9 @@
                         chain. </p>
 
                 </div>
-                <div class="md:w-1/2 w-full aspect-video">
-                    <img src="./imgs/about.jpeg" alt="Hero Image" class="w-full" data-aos="zoom-in"
-                        data-aos-duration="1500" data-aos-delay="500">
+                <div class="md:w-1/2 w-full aspect-video overflow-hidden">
+                    <img src="./imgs/about.jpg" alt="Hero Image" class="transition-transform duration-500 scale-x-[-1]"
+                        data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                 </div>
             </div>
         </section>
@@ -146,10 +146,10 @@
                                         <div class="ml-4 text-xl">Climate-Resilient Ponds</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        We identify eco-friendly, productive aquaculture sites using satellite and
-                                        geospatial
-                                        tools,
-                                        ensuring sustainable and profitable farm operations.
+                                        We identify eco-friendly aquaculture sites through satellite and geospatial
+                                        intelligence, ensuring climate-smart, productive, and sustainable ponds that
+                                        enhance resilience, optimize yields, and secure long-term profitability for
+                                        farmers and investors.
                                     </p>
                                 </div>
                             </div>
@@ -168,17 +168,15 @@
                                         <div class="ml-4 text-xl">Seed Solutions</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        Access high-quality, disease-free post-larvae from trusted genetic companies and
-                                        certified
-                                        hatcheries. BlueChain guarantees broodstock health, pathogen screening, and
-                                        complete
-                                        seed
-                                        traceability, giving farmers confidence and buyers verified assurance.
+                                        BlueChain connects farmers with high quality post-larvae from trusted genetic
+                                        companies and certified hatcheries, ensuring broodstock health, pathogen
+                                        screening, and seed traceability. This guarantees confidence for farmers and
+                                        verified assurance for global buyers.
                                     </p>
                                 </div>
                             </div>
 
-                            <!-- SFarm Inputs Marketplace -->
+                            <!-- Farm Inputs Marketplace -->
                             <div
                                 class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
@@ -192,17 +190,39 @@
                                         <div class="ml-4 text-xl">Farm Inputs Marketplace</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        Direct access to certified feeds, probiotics, and farm essentials, with expert
-                                        guidance
-                                        to
-                                        maximize productivity, efficiency, and biosecurity across farms.
+                                        Our marketplace connects farmers with certified feeds, probiotics, and farm
+                                        essentials. Supported by expert guidance, it maximizes productivity, improves
+                                        biosecurity, and strengthens farm efficiency, ensuring responsible practices and
+                                        better profitability.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Scientific Expertise & Advisory -->
+                            <div
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="flex items-center mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Scientific Advisory</div>
+                                    </div>
+                                    <p class="leading-loose text-white text-justify">
+                                        Incubated with ICAR-CIBA, Almericus delivers expert guidance from leading
+                                        aquaculture scientists. Farmers benefit from proven, research-backed solutions
+                                        that enhance productivity, ensure sustainability, and build trust across the
+                                        entire value chain.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Farm-to-Buyer Traceability -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -215,19 +235,16 @@
                                     </div>
                                     <p class="leading-loose text-white text-justify">
                                         QR-enabled Brood to Bowl traceability ensures full visibility from hatchery to
-                                        plate.
-                                        BAP,
-                                        ASC, SAPHARI certifications, and verified antibiotic-free testing provide global
-                                        buyers
-                                        with
-                                        trust, compliance, and transparency.
+                                        plate. BAP, ASC, SAPHARI, certifications and validated antibiotic-free testing
+                                        builds global buyer trust, compliance, and transparency in every shrimp
+                                        delivery.
                                     </p>
                                 </div>
                             </div>
 
-                            <!-- Certified Processing -->
+                            <!-- FCold Chain Logistics -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -236,20 +253,20 @@
                                                 d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
                                             </path>
                                         </svg>
-                                        <div class="ml-4 text-xl">Cold chain Logistics</div>
+                                        <div class="ml-4 text-xl">Cold Chain Logistics</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        End-to-end temperature-controlled logistics ensure product freshness and quality
-                                        from
-                                        farm
-                                        to certified processing and onward to international markets.
+                                        End-to-end temperature-controlled logistics safeguard product freshness and
+                                        quality. From farms to certified processing facilities and international buyers,
+                                        our integrated system ensures seamless exports, minimized losses, and stronger
+                                        global market confidence.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Financial & Risk Solutions -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -261,19 +278,16 @@
                                         <div class="ml-4 text-xl">Financial & Risk Solutions</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        Loans and insurance provide farmers, FPOs, and exporters with working capital
-                                        and
-                                        protection
-                                        against disease, climate, and export risks — building confidence throughout the
-                                        value
-                                        chain.
+                                        We facilitate loans and insurance to farmers, FPOs, and exporters, ensuring
+                                        working capital access and risk protection against diseases, climate risks, and
+                                        export challenges, while enabling confidence and long-term financial resilience.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Blue Carbon Solutions -->
                             <div
-                                class="w-full border-b border-[#2db1fd] md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 md:p-8 max-md:py-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
@@ -285,30 +299,41 @@
                                         <div class="ml-4 text-xl">Blue Carbon Solutions</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-                                        Climate-smart shrimp farming practices unlock verifiable blue carbon credits,
-                                        creating
-                                        additional income streams for farmers and exporters while supporting
-                                        biodiversity,
-                                        sustainable production, and global climate action.
+                                        Climate-smart shrimp farming generates verifiable blue carbon credits, unlocking
+                                        extra income for farmers and exporters. This supports biodiversity, global
+                                        climate goals, and sustainable production while creating additional economic and
+                                        environmental value.
                                     </p>
                                 </div>
                             </div>
 
-                            <!-- Blue Carbon Solutions -->
+                            <!-- Global Market Access -->
                             <div
-                                class="w-full max-md:hidden border-b border-[#2db1fd] md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                                class="w-full border-b border-[#2db1fd] md:w-1/2 md:border-b-0 lg:w-1/3 lg:border-b-0 md:p-8 max-md:py-8">
                                 <div data-aos="fade-up" data-aos-duration="1500">
                                     <div class="flex items-center mb-6">
-
-                                        <div class="ml-4 text-xl"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20"
+                                            height="20" fill="currentColor" class="h-6 w-6 text-white">
+                                            <path
+                                                d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                            </path>
+                                        </svg>
+                                        <div class="ml-4 text-xl">Global Market Access</div>
                                     </div>
                                     <p class="leading-loose text-white text-justify">
-
+                                        Almericus connects farmers and exporters directly to certified international
+                                        buyers, streamlining compliance, ensuring fair pricing, and creating sustainable
+                                        supply chains. This enables farmers to reach premium markets with verified
+                                        traceability.
                                     </p>
                                 </div>
                             </div>
 
                         </div>
+
+                        <p class="text-center text-white font-extrabolde text-md md:text-lg" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-delay="500">“Traceable, sustainable aquaculture with
+                            global reach — that's the Almericus promise.”</p>
 
                     </div>
                 </div>
@@ -398,8 +423,8 @@
                                     </div>
                                 </div>
                                 <div aria-hidden="true" class="mt-10 lg:mt-0">
-                                    <img src="./imgs/why.jpg" class="mx-auto" data-aos="zoom-in"
-                                        data-aos-duration="1500" data-aos-delay="500">
+                                    <img src="./imgs/why.avif" class="mx-auto" data-aos="zoom-in"
+                                        data-aos-duration="3000" data-aos-delay="1000">
                                 </div>
                             </div>
                         </div>
@@ -480,7 +505,7 @@
                     </p>
 
                     <p class="text-white font-bold md:text-5xl text-2xl leading-tight mb-6">
-                        UN SDG’s We are aligned with UN SDG’s on below:
+                        We are aligned with UN SDG’s on below:
                     </p>
                     <ul class="text-sm md:text-md font-medium text-gray-700 text-white sm:text-base md:mx-auto">
                         <?php foreach ($sdg_goals as $goal): ?>
@@ -510,58 +535,55 @@
 
 
     <!-- ========================= Videos ========================  -->
-    <section class="relative text-white overflow-hidden section-padding md:py-16 py-10" id="video">
-        <!-- Main Content Container -->
+    <!-- <section class="relative text-white overflow-hidden section-padding md:py-16 py-10" id="video">
         <div class="container mx-auto px-4 relative z-10">
-            <!-- Heading & Description -->
             <div class="text-center max-w-3xl mx-auto md:mb-14 mb-4">
                 <h2 class="text-xl md:text-4xl font-bold mb-4 text-[#22a6e5]" data-aos="fade-up"
                     data-aos-duration="1500">
-                    Shrimp Pond Tour </h2>
+                    Shrimp Pond Tour
+                </h2>
                 <div class="h-1 w-20 bg-[#22a6e5] mx-auto mb-6 rounded-full" data-aos="fade-up"
                     data-aos-duration="1800"></div>
                 <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                     data-aos-delay="500">
-                    A closer look at sustainable farming practices and healthy growth.</p>
+                    A closer look at sustainable farming practices and healthy growth.
+                </p>
             </div>
-            <!-- Video Section -->
+
             <div class="max-w-4xl mx-auto">
                 <div class="relative overflow-hidden shadow-2xl" id="video-container">
-                    <!-- Thumbnail View -->
                     <div id="thumbnail" class="relative">
                         <img src="./imgs/video.jpg" alt="Video thumbnail" class="w-full aspect-video object-cover" />
                         <div class="absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer"
                             id="play-button">
-                            <!-- Play Button SVG -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-18 w-18" viewBox="0 0 24 24">
-                                <!-- White Circle -->
                                 <circle cx="12" cy="12" r="10" fill="white" />
-                                <!-- Blue Play Triangle -->
                                 <polygon points="10,8 16,12 10,16" fill="#22a6e5" />
                             </svg>
-
-
                         </div>
                     </div>
-                    <!-- Video Embed -->
-                    <div id="video" class="hidden aspect-video relative ">
-                        <iframe class="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+
+                    <div id="video-cnt" class="hidden aspect-video relative">
+                        <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/vlCxhqDrkWM"
                             title="The Artist Barefoot Showcase" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+
 
 
     <!-- ========================= Contact Form =========================   -->
     <section class="py-16" id="contact">
         <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
             <div class="hidden lg:block md:w-1/2 lg:w-[80%] bg-cover" data-aos="zoom-in" data-aos-duration="1300"
-                style="background-image:url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')">
+                style="background-image:url('./imgs/form.avif')">
             </div>
             <div class="w-full p-8 md:w-1/2 lg:w-[80%]">
                 <h2 class="text-2xl font-semibold text-gray-700 text-center" data-aos="fade-up"
@@ -604,7 +626,7 @@
 
                     <div class="mt-8">
                         <button type="submit"
-                            class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Sumbit</button>
+                            class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">submit</button>
                     </div>
 
                 </form>
