@@ -14,7 +14,7 @@
                 data-aos-delay="700" data-aos-duration="1300">
 
                 <a href="https://play.google.com/store/apps/details?id=com.almericus" target="_blank" class="flex justify-center items-center">
-                    <div class="flex items-center justify-center bg-gray-100 dark:bg-gray-700">
+                    <div class="flex rounded-lg items-center justify-center bg-gray-100 dark:bg-gray-700">
                         <div
                             class="flex items-center bg-gray-100 hover:bg-white rounded-lg shadow-md px-6 py-2 text-md ">
                             <img src="./imgs/play.png" class="w-10 mr-2" alt="">

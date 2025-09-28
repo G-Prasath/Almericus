@@ -102,8 +102,8 @@
                         chain. </p>
 
                 </div>
-                <div class="md:w-1/2 w-full aspect-video overflow-hidden">
-                    <img src="./imgs/about.jpg" alt="Hero Image" class="transition-transform duration-500 scale-x-[-1]"
+                <div class="md:w-1/2 w-full aspect-video overflow-hidden rounded-lg">
+                    <img src="./imgs/about.jpg" alt="Hero Image" class="w-full rounded-lg transition-transform duration-500 scale-x-[-1]"
                         data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                 </div>
             </div>
@@ -423,7 +423,7 @@
                                     </div>
                                 </div>
                                 <div aria-hidden="true" class="mt-10 lg:mt-0">
-                                    <img src="./imgs/why.avif" class="mx-auto" data-aos="zoom-in"
+                                    <img src="./imgs/why.avif" class="mx-auto rounded-md" data-aos="zoom-in"
                                         data-aos-duration="3000" data-aos-delay="1000">
                                 </div>
                             </div>
