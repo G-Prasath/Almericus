@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope Foundation - Charity & Trust</title>
+    <title>Almericus Blue Ventures Pvt Ltd</title>
 
     <?php include_once './_templates/head.php'; ?>
 </head>
@@ -354,7 +354,7 @@
                             data-aos-duration="1800"></div>
                         <p class="text-gray-600 md:text-lg text-md" data-aos="fade-up" data-aos-duration="1500"
                             data-aos-delay="500">
-                            Almericus in building trusted, sustainable shrimp supply chains.</p>
+                            Trusted, sustainable shrimp with full traceability</p>
                     </div>
 
                     <section class="">

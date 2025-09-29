@@ -38,7 +38,7 @@
                     </a>
 
                     <!-- Instagram -->
-                    <a href="/" class="text-gray-300 hover:text-pink-500 transition-colors duration-300"
+                    <a href="javascript:;" class="text-gray-300 hover:text-pink-500 transition-colors duration-300"
                         aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
@@ -47,7 +47,7 @@
                     </a>
 
                     <!-- Facebook -->
-                    <a href="/" class="text-gray-300 hover:text-blue-600 transition-colors duration-300"
+                    <a href="javascript:;" class="text-gray-300 hover:text-blue-600 transition-colors duration-300"
                         aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                             <path
@@ -111,8 +111,7 @@
                 </li>
                 <li>
                     <a href="#about-us"
-                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">About Us
-                        Us</a>
+                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">About Us</a>
                 </li>
                 <li>
                     <a href="#soluation"
@@ -125,6 +124,10 @@
                 <li>
                     <a href="#gallrey"
                         class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">Gallery</a>
+                </li>
+                <li>
+                    <a href="privacy_policy.php" target="_blank"
+                        class="text-sm text-gray-300 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy & Policy</a>
                 </li>
             </ul>
         </div>
