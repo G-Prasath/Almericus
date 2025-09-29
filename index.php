@@ -7,6 +7,7 @@
     <title>Almericus Blue Ventures Pvt Ltd</title>
 
     <?php include_once './_templates/head.php'; ?>
+
 </head>
 
 <body class="bg-gray-50">
@@ -103,8 +104,9 @@
 
                 </div>
                 <div class="md:w-1/2 w-full aspect-video overflow-hidden rounded-lg">
-                    <img src="./imgs/about.jpg" alt="Hero Image" class="w-full rounded-lg transition-transform duration-500 scale-x-[-1]"
-                        data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                    <img src="./imgs/about.jpg" alt="Hero Image"
+                        class="w-full rounded-lg transition-transform duration-500 scale-x-[-1]" data-aos="zoom-in"
+                        data-aos-duration="1500" data-aos-delay="500">
                 </div>
             </div>
         </section>
@@ -449,11 +451,15 @@
                     data-aos-delay="500">
                     Transforming Shrimp Farming with Innovation</p>
             </div>
+            <!-- Your Gallery -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
                 <?php foreach ($images as $src): ?>
                     <div class="overflow-hidden rounded-lg" data-aos="zoom-in" data-aos-duration="1500">
-                        <img class="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
-                            src="<?= $src ?>" alt="Gallery image" />
+                        <!-- Wrap image inside a GLightbox link -->
+                        <a href="<?= $src ?>" class="glightbox">
+                            <img class="h-auto max-w-full rounded-lg transition-transform duration-300 hover:scale-110"
+                                src="<?= $src ?>" alt="Gallery image" />
+                        </a>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -576,9 +582,6 @@
     </section> -->
 
 
-
-
-
     <!-- ========================= Contact Form =========================   -->
     <section class="py-16" id="contact">
         <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
@@ -664,6 +667,8 @@
     <?php include_once './_templates/floating.php'; ?>
 
     <?php include_once './_templates/script.php'; ?>
+
+
 
 
 </body>

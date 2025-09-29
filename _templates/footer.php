@@ -24,7 +24,7 @@
                 <div class="flex">
                     <p class="text-sm font-bold text-white mr-1">Phone:</p>
                     <a href="tel:9962996110" aria-label="Our phone" title="Our phone"
-                        class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">996 299 6110</a>
+                        class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+91 9962996110</a>
                 </div>
                 <p class="text-lg font-bold tracking-wide mt-7">Social Media</p>
                 <div class="flex items-center space-x-4 mt-2">
